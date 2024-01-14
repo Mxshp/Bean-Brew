@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Locations</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="top">
+		<h1>Our Locations</h1>
+		<img src="{{ url_for('static', filename='locations_title.jpg') }}" class="title_background">
+			<div style="display: inline-block;">
+				<p class="bean_brew">Bean & Brew</p>
+				<img src="{{ url_for('static', filename='coffee.png') }}" class="coffee" height="100" width="100">
+			</div>
+		</div>
+		<hr class="fline">
+		<div class="overall_div" >
+				<p class="leeds">Leeds</p>
+				<hr class="vline1">
+				<p>Knaresborough Castle</p>
+				<hr class="vline2">
+				<p>Harrogate</p>
+		</div>
+		<div>
+			<br><br><br><br>
+			<form>
+				<input type="submit" class="table1" value="Book a table" formaction="index.html">
+				<input type="submit" class="table2" value="Book a table" formaction="index.html">
+				<input type="submit" class="table3" value="Book a table" formaction="index.html">
+				<br><br>
+				<input type="submit" class="bake1" value="Book a baking lesson" formaction="index.html">
+				<input type="submit" class="bake2" value="Book a baking lesson" formaction="index.html">
+				<input type="submit" class="bake3" value="Book a baking lesson" formaction="index.html">
+			</form>
+
+
+
+		</div>
+
+	</body>
+	<style>
+		body {
+        background-color: #FFC7C7;
+		font-family: Indie Flower;
+		overflow-x: hidden;
+    	}
+		.title_background {
+			position:absolute;
+    		z-index:-1;
+			margin: -230px -200px;
+			height: 150px;
+		}
+		.top {
+			text-align: center;
+		}
+		h1 {
+			font-weight: bold;
+			font-size: 110px;
+		}
+		.bean_brew {
+			font-size: 50px;
+			margin: -60px;
+			padding-right: 170px;
+		}
+		.overall_div {
+			display: inline-block;
+			float: none;
+			font-size: 50px;
+			display: flex; 
+			justify-content: space-evenly;
+			margin: -30px;
+		}
+		.coffee {
+			padding-left: 230px;
+			margin: -35px;
+			text-align: justify;
+		}
+		.fline {
+			background-color: white;
+			height: 20px;
+			border: 1px solid #ffffff;
+			margin: 20px -10000px;
+		}
+		.vline1 {
+			border: 1px solid #ffffff;
+			background-color: white;
+			height: 120px;
+			width: 15px;
+			border-radius: 50px;
+			margin: 0px;
+		}
+		.vline2 {
+			border: 1px solid #ffffff;
+			background-color: white;
+			height: 120px;
+			width: 15px;
+			border-radius: 50px;
+			margin: 0px;
+		}
+		input[type=submit] {
+			background: #FFC7C7;
+			font-family: Indie Flower;
+			font-size: 38px;
+			transition:.70s;
+		}
+		input[type=submit]:hover {
+			cursor:pointer;
+			background:#FFA0A0;
+			transition:.70s;
+		}
+		.table1 {
+			margin: 0px 115px;
+		}
+		.table2 {
+			margin: 0px 350px;
+		}
+		.table3 {
+			margin: 0px 152px;
+		}
+		.bake1 {
+			margin: 0px 55px;
+		}
+		.bake2 {
+			margin: 0px 280px;
+		}
+		.bake3 {
+			margin: 0px 87px;
+		}
+	</style>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign up</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div style="text-align: center;">
+            <img src="{{ url_for('static', filename='coffee.png') }}" height="200" width="200">
+            <p style="font-size: 64px;">Bean & Brew</p>
+        </div>
+
+        <div style="text-align: center;">
+            <p style="font-size: 64px;">Sign up</p>
+            <form action="#" method="POST">
+                <input type="text" name="fname" placeholder="First name"><br>
+                <input type="text" name="email" placeholder="Email Address"><br>
+                <input type="password" name="pass" placeholder="Password"><br>
+                <input type="password" name="repass" placeholder="Retype Password"><br><br>
+                <input type="number" name="bday" min="1" max="31" placeholder="Day">
+                <input type="number"  name="bmonth" min="1" max="12" placeholder="Month"><br><br>
+                <p class="error">{{info}}</p>
+                <input type="submit" value="Sign up">
+            </form>
+        </div>
+    </body>
+</html>
+
+<style>
+    body {
+        background-color: #555555;
+        font-family: Indie Flower;
+        color: #FFFFFF;
+    }
+    input {
+        padding: 10px;
+        margin: 4px 0px;
+	}
+	input::placeholder{
+        font-family: Indie Flower;
+        font-size: 23px;
+        width: 200px;
+	}
+	input[type=submit] {
+        border:none;
+        background: #FFC7C7;
+        font-size: 40px;
+        padding: 1px 34px;
+        border-radius: 40px;
+        font-family: Indie Flower;
+        transition:.70s;
+	}
+	input[type=submit]:hover {
+        background: #FFA0A0;
+        cursor: pointer;
+        transition:.70s;
+	}
+    input[type=number] {
+        padding: 13px 17px;
+        margin: 4px;
+	    width: 70px;
+    }
+    .error {
+        color: red;
+        font-size: 24px;
+    }
+</style>
